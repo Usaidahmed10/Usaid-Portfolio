@@ -22,7 +22,7 @@ export const ProfilePane = ({ isOpen, onClose }: ProfilePaneProps) => {
             </div>
         {/* Profile Image */}
         <div className="w-full h-72 bg-gradient-secondary flex items-center justify-center overflow-hidden rounded-t-xl">
-          <img src="/profile.jpg" alt="Usaid" className="w-full h-full object-cover" />
+          <img src="/profile.png" alt="Usaid" className="w-full h-full object-cover" />
             </div>
         {/* Main Content */}
         <div className="flex flex-col px-4 py-0">

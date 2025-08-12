@@ -32,7 +32,7 @@ const About = () => {
             <div className="flex-shrink-0">
               <div className="w-56 h-56 rounded-full overflow-hidden shadow-2xl border-4 border-[#3a1550] bg-background flex items-center justify-center">
                 <Avatar className="w-52 h-52 rounded-full">
-                  <AvatarImage src="/profile.jpg" alt="Usaid" className="object-cover w-full h-full" />
+                  <AvatarImage src="/profile.png" alt="Usaid" className="object-cover w-full h-full" />
                   <AvatarFallback className="text-5xl bg-primary/10 rounded-full">
                     <User className="w-20 h-20" />
                   </AvatarFallback>

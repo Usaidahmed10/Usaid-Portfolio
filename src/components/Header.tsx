@@ -111,11 +111,11 @@ export const Header = ({ setIsEmailOpen }: { setIsEmailOpen: (open: boolean) => 
               variant="ghost"
               className="w-7 h-7 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-muted-foreground/20 border-2 border-primary/60 shadow-lg flex items-center justify-center overflow-hidden p-0 hover:border-primary transition-smooth hover:scale-110"
             >
-              <img src="/profile.jpg" alt="User" className="w-full h-full object-cover rounded-full border-2 border-white" />
+              <img src="/profile.png" alt="User" className="w-full h-full object-cover rounded-full border-2 border-white" />
             </Button>
           </PopoverTrigger>
           <PopoverContent className="w-72 max-w-xs md:w-96 md:max-w-md p-2 md:p-4 rounded-2xl bg-card/95 backdrop-blur-md border border-border/30 shadow-lg flex flex-col items-center gap-2 md:gap-4" align="end">
-            <img src="/profile.jpg" alt="Usaid" className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover mb-1 md:mb-2" />
+            <img src="/profile.png" alt="Usaid" className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover mb-1 md:mb-2" />
             <div className="text-center">
                       <div className="text-base md:text-lg font-bold text-foreground">Hi, I am Usaid</div>
         <div className="text-muted-foreground text-xs md:text-sm mb-1 md:mb-2">usaid@email.com</div>
