@@ -10,12 +10,12 @@ import React from "react";
 const socialLinks = [
   {
     icon: <img src="/github.svg" alt="GitHub" />,
-    href: "https://github.com/SyedSameerFaisall",
+    href: "https://github.com/Usaidahmed10",
     label: "Github"
   },
   {
     icon: <img src="/linkedin.svg" alt="LinkedIn" />,
-    href: "https://www.linkedin.com/in/syedsameerfaisal/",
+    href: "https://www.linkedin.com/in/usaid-ahmed-2149422a2",
     label: "Linkedin"
   },
   {
@@ -24,17 +24,17 @@ const socialLinks = [
   },
   {
     icon: <img src="/instagram.svg" alt="Instagram" />,
-    href: "https://www.instagram.com/sameer__faisal/",
+    href: "https://www.instagram.com/usaidahmed108/",
     label: "Instagram"
   },
   {
     icon: <img src="/facebook.svg" alt="Facebook" />,
-    href: "https://www.facebook.com/sameer.faisal.524596",
+    href: "https://www.facebook.com/share/172G11vzzs/",
     label: "Facebook"
   },
   {
     icon: <img src="/calendly.svg" alt="Calendly" />,
-    href: "https://calendly.com/syedsameerfaisal1",
+    href: "https://calendly.com/usaidahmed108",
     label: "Calendly"
   }
 ];

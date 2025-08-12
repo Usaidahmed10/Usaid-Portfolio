@@ -17,7 +17,7 @@ export const EmailPane = ({ isOpen, onClose }: EmailPaneProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     from: "",
-    to: "usaid@email.com",
+    to: "usaid1@ualberta.ca",
     subject: "",
     message: ""
   });
@@ -55,7 +55,7 @@ export const EmailPane = ({ isOpen, onClose }: EmailPaneProps) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: '491dd003-3205-42e1-ba87-a4304a62fe42',
+          access_key: 'e15d9b76-022d-42c4-bc99-5c4a0b17dc84',
           from_name: formData.from,
           from_email: formData.from,
           subject: formData.subject,
@@ -79,7 +79,7 @@ export const EmailPane = ({ isOpen, onClose }: EmailPaneProps) => {
       // Reset form
       setFormData({
         from: "",
-        to: "usaid@email.com",
+        to: "usaid1@ualberta.ca",
         subject: "",
         message: ""
       });
