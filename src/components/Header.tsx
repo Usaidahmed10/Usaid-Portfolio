@@ -118,7 +118,7 @@ export const Header = ({ setIsEmailOpen }: { setIsEmailOpen: (open: boolean) => 
             <img src="/profile.png" alt="Usaid" className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover mb-1 md:mb-2" />
             <div className="text-center">
                       <div className="text-base md:text-lg font-bold text-foreground">Hi, I am Usaid</div>
-        <div className="text-muted-foreground text-xs md:text-sm mb-1 md:mb-2">usaid@email.com</div>
+        <div className="text-muted-foreground text-xs md:text-sm mb-1 md:mb-2">usaid1@ualberta.ca</div>
             </div>
             <div className="my-2 md:my-3">
               <h3 className="text-foreground font-semibold text-sm md:text-base mb-1 md:mb-2">HOW TO USE</h3>

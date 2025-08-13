@@ -29,7 +29,7 @@ export const ProfilePane = ({ isOpen, onClose }: ProfilePaneProps) => {
           {/* Profile Info */}
           <div className="flex flex-col items-center text-center mb-5">
                     <SheetTitle className="text-3xl text-foreground font-bold">Hi, I'm Usaid</SheetTitle>
-        <span className="text-muted-foreground text-base">usaid@email.com</span>
+        <span className="text-muted-foreground text-base">usaid1@ualberta.ca</span>
             <p className="text-muted-foreground text-lg">Welcome to my personal site. 💜</p>
           </div>
           {/* How to Use */}
