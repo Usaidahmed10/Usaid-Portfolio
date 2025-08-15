@@ -14,27 +14,39 @@ interface Message {
 
 async function fetchOpenAIResponse(userMessage: string) {
   const context = findRelevantContextChunk(userMessage);
-  const response = await fetch('/api/chat', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: 'gpt-4o-mini',
-      messages: [
-        {
-          role: 'system',
-          content: `You are Usaid Ahmed's AI assistant. You represent him professionally and help visitors learn about his background, skills, and experience. \n\nHere is comprehensive information about Usaid:\n${context}\n\nGuidelines:\n- Answer as if you're representing Usaid professionally\n- Use first person when talking about Usaid's experiences ("I have experience in...", "I worked at...", "My projects include...")\n- Be friendly, professional, and enthusiastic about his work\n- Provide specific details from the context when relevant\n- If asked about something not in the context, politely redirect to what you do know\n- Highlight his achievements, skills, and projects naturally in conversation`
-        },
-        { role: 'user', content: userMessage }
-      ],
-      max_tokens: 400,
-      temperature: 0.7,
-    }),
-  });
-  const data = await response.json();
-  return data.choices?.[0]?.message?.content || "Sorry, I couldn't get a response.";
+
+  try {
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      // The server now enforces model & clamps params, so sending model is optional.
+      body: JSON.stringify({
+        messages: [
+          {
+            role: 'system',
+            content:
+              `You are Usaid Ahmed's AI assistant. You represent him professionally and help visitors learn about his background, education, skills, and experience.\n\nHere is comprehensive information about Usaid:\n${context}\n\nGuidelines:\n- Answer as if you're representing Usaid professionally\n- Use first person when talking about Usaid's experiences ("I have experience in...", "I worked at...", "My projects include...")\n- Be friendly, professional, and enthusiastic about his work\n- Provide specific details from the context when relevant\n- If asked about something not in the context, politely redirect to what you do know\n- Highlight his achievements, skills, and projects naturally in conversation`
+          },
+          { role: 'user', content: userMessage }
+        ],
+        max_tokens: 400,
+        temperature: 0.7,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      const reason = data?.error ?? "The server couldn’t complete your request.";
+      return `Sorry, there was an issue: ${reason}`;
+    }
+
+    return data.choices?.[0]?.message?.content || "I couldn't generate a response this time.";
+  } catch (e: any) {
+    return `Network error: ${e?.message || e}`;
+  }
 }
+
 
 // Enhanced keyword mapping specific to Usaid's profile
 const keywordMap = {
