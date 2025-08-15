@@ -56,37 +56,37 @@ const skillCategories = [
 
 const certifications = [
   {
-    title: "Machine Learning Certification",
-    issuer: "Stanford University",
-    date: "Dec 2024",
-    credentialId: "https://www.coursera.org/account/accomplishments/specialization/US9WW4UT4MP3"
+    title: "Amazon Bedrock Essentials",
+    issuer: "Amazon Web Services (AWS)",
+    date: "2025",
+    credentialId: "/certs/aws-bedrock-essentials.jpeg"
   },
   {
-    title: "Data Analyst Certification",
-    issuer: "DataCamp",
-    date: "Sep 2024",
-    credentialId: "https://www.datacamp.com/certificate/DA0029836382233" 
-  },
-
-  {
-    title: "Google Data Analytics Professional Certification",
-    issuer: "Google",
-    date: "Jul 2024",
-    credentialId: "https://www.coursera.org/account/accomplishments/professional-cert/JHAA3XNXDJVR"
+    title: "Amazon OpenSearch Essentials",
+    issuer: "Amazon Web Services (AWS)",
+    date: "2025",
+    credentialId: "/certs/aws-opensearch-essentials.jpeg"
   },
   {
-    title: "SQL for Data Science",
-    issuer: "Coursera",
-    date: "Jan 2024",
-    credentialId: "https://www.coursera.org/account/accomplishments/verify/JNN3NKVWTXZ8?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course"
+    title: "AWS SageMaker Essentials",
+    issuer: "Amazon Web Services (AWS)",
+    date: "2025",
+    credentialId: "/certs/aws-sagemaker-essentials.jpeg"
   },
   {
-    title: "Responsive Web Design",
-    issuer: "freeCodeCamp",
-    date: "Jul 2023",
-    credentialId: "https://www.freecodecamp.org/certification/fccab862b8b-4aba-4f19-a453-74de60a2cb5c/responsive-web-design"
+    title: "Building RAG Workflows with AWS",
+    issuer: "Amazon Web Services (AWS)",
+    date: "2025",
+    credentialId: "/certs/aws-rag-workflows.jpeg"
+  },
+  {
+    title: "Customizing and Evaluating LLMs with AWS",
+    issuer: "Amazon Web Services (AWS)",
+    date: "2025",
+    credentialId: "/certs/aws-customize-evaluate-llms.jpeg"
   }
 ];
+
 
 // Skill icon mapping
 const skillIconMap: Record<string, { icon: JSX.Element; color: string }> = {
@@ -195,6 +195,7 @@ function getSkillIcon(skillName: string) {
 
 // Certification issuer icon mapping
 const certIssuerIconMap: Record<string, JSX.Element> = {
+  "aws": <img src="/aws.jpeg" className="h-5 w-5" alt="aws" />, // Place aws.jpeg in public
   "stanford": <img src="/stanford.svg" className="h-5 w-5" alt="Stanford" />, // Place stanford.svg in public
   "google": <img src="/google.svg" className="h-5 w-5" alt="Google" />, // Place google.svg in public
   "freecodecamp": <img src="/freecodecamp.svg" className="h-5 w-5" alt="freeCodeCamp" />, // Place freecodecamp.svg in public
@@ -495,16 +496,15 @@ const Skills = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <Button 
-                      asChild 
-                      variant="outline" 
-                      size="sm" 
-                      className="w-full group-hover:border-primary/50 group-hover:text-primary group-hover:bg-primary/5 transition-all duration-300" 
-                      {...(!cert.credentialId.startsWith('http') && { disabled: true })}
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="w-full group-hover:border-primary/50 group-hover:text-primary group-hover:bg-primary/5 transition-all duration-300"
                     >
-                      <a 
-                        href={cert.credentialId.startsWith('http') ? cert.credentialId : '#'} 
-                        target="_blank" 
+                      <a
+                        href={cert.credentialId}              // local PDF in /public
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2"
                       >

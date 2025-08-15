@@ -5,49 +5,39 @@ import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 const projects = [
   {
-    title: "AI Financial Analyst",
-    description:
-      "A cutting-edge, multi-agent system engineered with LangGraph and LangChain, designed to autonomously perform comprehensive stock evaluations across four core dimensions: Technical Analysis, Fundamental Valuation, News Sentiment, and Analyst Consensus. The agent intelligently orchestrates these modules to deliver a clear, evidence-backed investment verdict (BUY/HOLD/SELL) with confidence scoring. All insights are delivered through a sleek, interactive Streamlit dashboard, making institutional-grade analysis accessible in real time.",
-    technologies: [
-      "Python", "LangChain", "LangGraph", "Streamlit", "YFinance", "TA-Lib", "Plotly", "Tavily", "BeautifulSoup", "Markdown2", "FPDF2"
-    ],
-    image: "/ai-financial-analyst.jpg",
-    liveUrl: "http://localhost:8501",
-    githubUrl: "https://github.com/SyedSameerFaisall/Financial-Investment-Agent"
+    title: "VibeSync: Mood-Driven Social Media App",
+    description: "A native Android app designed to help users express, track, and share their emotional journeys. Users can post mood-based updates with text, images, and locations, explore interactive mood maps, and complete gamified VibeQuests to unlock themed emoji bundles via the VibeShift feature. Built with Firebase for authentication, storage, and real-time data handling, and integrated with Google Maps API for location-based features, VibeSync offers a visually engaging, interactive platform for personal mood storytelling.",
+    technologies: [ "Java", "Android Studio", "Firebase Auth", "Firebase Firestore", "Firebase Storage", "Google Maps API" ],
+    image: "/vibe.png",
+    liveUrl: "#",
+    githubUrl: "https://github.com/cmput301-w25/project-vibeverse"
   },
   {
-    title: "Brain Tumor Classifier",
-    description:
-      "Developed a high-accuracy deep learning model using a custom-built Convolutional Neural Network (CNN) to classify brain tumors from MRI scans into four categories: Glioma, Meningioma, Pituitary Tumor, and No Tumor. The project showcases a complete end-to-end machine learning pipeline—from data acquisition and preprocessing to training, evaluation, and result visualization. Achieved over 96% test accuracy, demonstrating the effectiveness of tailored CNN architectures in real-world medical imaging tasks.",
-    technologies: [
-      "Python", "PyTorch", "Torchvision", "KaggleHub", "Matplotlib", "Seaborn", 'Pandas', 'Numpy'
-    ],
-    image: "/brain-tumor-classifier.png",
+    title: "UAlberta CourseLens",
+    description: "A centralized platform that streamlines course selection for University of Alberta students by aggregating professor reviews, course details, and accessibility information from sources like RateMyProf, Reddit, and BearTracks. The system delivers real-time difficulty and accessibility insights via custom algorithms, supported by a scalable AWS Lambda backend and a fast, responsive Next.js UI. Designed with a student-first approach, CourseLens ensures informed academic decisions through unified, accessible, and personalized course recommendations.",
+    technologies: [ "Next.js", "AWS Lambda", "PostgreSQL", "Python", "Tailwind CSS", "BeautifulSoup", "Requests", "Azure" ],
+    image: "/courselens.jpeg",
     liveUrl: "#",
-    githubUrl: "https://github.com/SyedSameerFaisall/Brain-Tumor-CNN"
+    githubUrl: "https://github.com/Usaidahmed10/CourseLens"
   },
   {
-    title: "Semantic Book Recommender",
-    description:
-      "A powerful, semantic book recommendation system powered by OpenAI LLMs and vector search. It intelligently matches user queries to books using dense embeddings and performs zero-shot classification to categorize titles as fiction or non-fiction. The system also extracts emotional tone (e.g., suspenseful, joyful, tragic) from text using sentiment analysis, enabling highly personalized filtering. All functionality is wrapped in an intuitive Gradio web app, delivering real-time, human-like recommendations that go beyond simple keyword matching.",
-    technologies: [
-      "Python", "LangChain", "Transformers", "ChromaDB", "Gradio", "Pandas", "Seaborn", "OpenCV", "ipywidgets"
-    ],
-    image: "/book-recommender-system.png",
-    liveUrl: "#",
-    githubUrl: "https://github.com/SyedSameerFaisall/Semantic-Book-Recommender"
+    title: "Tutor Connect",
+    description: "An online tutoring marketplace connecting Canadian students with vetted overseas agencies. Features include Google Login, Stripe-powered payments, built-in chat, calendar scheduling with real-time time zone conversion, and automated email triggers. The platform offers affordable rates (up to 50% lower), transparent pricing, risk-free demo sessions, and a responsive Next.js + Tailwind UI deployed on Vercel with Supabase handling authentication, database, and file storage.",
+    technologies: ["Next.js", "Tailwind CSS", "Vercel", "Supabase", "PostgreSQL", "Google OAuth", "Stripe", "Node.js", "EmailJS", "Live Chat API"],
+    image: "/tutorconnect.png",
+    liveUrl: "https://tutorconnectca.vercel.app/",
+    githubUrl: "#"
   },
   {
-    title: "HEP Citation Network Analysis",
-    description:
-      "A rigorous statistical analysis of citation behavior within the High Energy Physics – Phenomenology (hep-ph) domain on arXiv, spanning nearly a decade of research (1993–2001). Conducted entirely in base R with fully reproducible R Markdown reporting, the project explores in- and out-citation distributions, models longitudinal trends in reference counts, and investigates seasonal patterns in paper impact. Demonstrates strong applied statistical reasoning and data storytelling in a real-world scientific context, without relying on external libraries.",
-    technologies: [
-      "R", "R Markdown", "knitr"
-    ],
-    image: "/hep-citation-network.jpg",
+    title: "aMuse: Neuro-Marketing Application",
+    description: "A neuro-marketing application integrating with Muse EEG headsets to measure brain activity and analyze consumer engagement for products, speeches, and advertisements. Built for consultancy agencies, it provides data-driven insights through a user-friendly Flutter interface and ensures privacy via secure API hosting and differential privacy measures. Designed for scalability, aMuse supports subscription-based pricing and potential commission-based partnerships with Muse.",
+    technologies: ["Flutter", "Dart", "Python", "C++", "CMake", "Jupyter Notebook", "Swift", "Figma", "Android Studio", "BrainFlow API", "Muse-S", "VS Code"],
+    image: "/amuse.jpg",
     liveUrl: "#",
-    githubUrl: "https://github.com/SyedSameerFaisall/HEP-Citation-Network"
-  }
+    githubUrl: "https://github.com/Usaidahmed10/neuro-marketing"
+  },
+
+
 ];
 
 const Projects = () => {
