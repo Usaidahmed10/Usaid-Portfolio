@@ -224,7 +224,7 @@ export const Chatbot = ({ isEmailOpen }: { isEmailOpen?: boolean }) => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: `👋 Hi! I'm Usaid's AI assistant!\n\nI'm here to help you learn about Usaid Ahmed - his background, skills, projects, and experience.\n\n🎓 Currently pursuing BSc Data Science at UCL\n💼 Vice President of UCL Data Science Society\n🏆 Global Undergraduate Scholar\n\n✨ Feel free to ask me about:\n• His technical skills and projects\n• Education and achievements\n• Work experience\n• Machine learning expertise\n• Contact information\n\nWhat would you like to know about Usaid?`,
+      text: `👋 Hi! I'm Usaid's AI assistant!\n\nI'm here to help you learn about Usaid Ahmed - his background, skills, projects, and experience.\n\n🎓 Pursuing Hon BSc in Computing Science at UofA\n💼 Tech Director of UofA Undergraduate AI Society\n🏆 Global Undergraduate Scholar\n\n✨ Feel free to ask me about:\n• His technical skills and projects\n• Education and achievements\n• Work experience\n• Machine learning expertise\n• Contact information\n\nWhat would you like to know about Usaid?`,
       isBot: true,
       timestamp: new Date()
     }
