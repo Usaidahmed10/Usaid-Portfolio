@@ -36,6 +36,61 @@ const projects = [
     liveUrl: "#",
     githubUrl: "https://github.com/Usaidahmed10/neuro-marketing"
   },
+  {
+  title: "Interactive Twitter CLI",
+  description: "A Python-based command-line application for managing and exploring Twitter-like data stored in MongoDB. Users can search tweets and users, list top tweets by engagement, list top users by followers, and compose new tweets—all from the terminal. Features include keyword search, detailed metadata viewing, and efficient batch data loading, with MongoDB handling large datasets seamlessly.",
+  technologies: ["Python", "MongoDB", "PyMongo"],
+  image: "/twitter.jpg",
+  liveUrl: "#",
+  githubUrl: "https://github.com/Usaidahmed10/MongoDB-Tweet-Manager"
+ },
+ {
+  title: "3D Ray Tracer",
+  description: "A multi-file C ray tracer that renders shaded spheres with semi‑realistic lighting, hard shadows, and 3×3 grid anti‑aliasing to PPM images. Implements custom Vec3 math, ray–sphere intersection, HEX→RGB color unpacking with qsort indexing, and a Makefile that builds MS1/MS2/FS variants. Includes CLI input parsing, dynamic allocation, and check scripts for automated validation.",
+  technologies: ["C", "Makefile", "GCC", "PPM", "math.h", "qsort", "Shell", "Python"],
+  image: "/raytracer.png",
+  liveUrl: "#",
+  githubUrl: "https://github.com/cmput201-f24/assignment-template-Usaidahmed10"
+},
+{
+  title: "Alberta-Legal-Assistant-Chatbot",
+  description: "AI-powered chatbot for Alberta’s Acts & Regulations using a two‑stage RAG pipeline. A serverless ingestion flow (S3 + EventBridge) cleans, chunks, and tags 1,400+ PDFs; embeddings (MiniLM via ONNX) are written to OpenSearch Serverless for hybrid k‑NN + BM25 retrieval with metadata filters and deduplication. Bedrock handles prompt orchestration, grounding, and citation‑rich answers behind API Gateway + Lambda, with delta sync (added/changed/removed), YAKE keyword extraction, Dockerized jobs, and CloudWatch tracing.",
+  technologies: ["AWS Bedrock", "OpenSearch Serverless", "AWS Lambda", "API Gateway", "Amazon S3", "EventBridge", "CloudWatch", "IAM", "Docker", "Python", "FastAPI", "Sentence-Transformers (MiniLM)", "ONNX Runtime", "YAKE", "k‑NN", "BM25"],
+  image: "/legal.jpeg",
+  liveUrl: "#",
+  githubUrl: "https://github.com/Usaidahmed10/Alberta-Legal-Assistant-Chatbot"
+},
+{
+  title: "Movies-Recommendation-System",
+  description: "Content-based movie recommender built with Python + Streamlit. Loads a Kaggle movies dataset, vectorizes text features with TF-IDF, computes cosine similarity, and returns top-N similar titles via a fast interactive UI. Includes CSV ingest, preprocessing, sparse-matrix caching, and simple evaluation/debug views.",
+  technologies: ["Python", "Streamlit", "scikit-learn (TfidfVectorizer)", "pandas", "NumPy", "Cosine Similarity", "Kaggle Dataset"],
+  image: "/movies.jpg",
+  liveUrl: "#",
+  githubUrl: "https://github.com/Usaidahmed10/Movies-Recommendation-System"
+},
+{
+  title: "Sonar Data Classification",
+  description: "Binary classifier for sonar signals (Rock vs Mine) using Logistic Regression. Implements a full ML pipeline—CSV ingest, feature/label split, scaling (StandardScaler), train/test split, training, evaluation, and a simple predictive routine for new 60-value inputs. Achieves ~85% test accuracy on the provided dataset.",
+  technologies: ["Python", "scikit-learn (LogisticRegression, StandardScaler, train_test_split)", "pandas", "NumPy"],
+  image: "/mine.png",
+  liveUrl: "#",
+  githubUrl: "#"
+},
+{
+  title: "Diabetes Prediction System",
+  description: "Streamlit app + SVM (linear kernel) that predicts diabetes from PIMA health metrics. Includes preprocessing with StandardScaler, train/test split, a reusable training script that saves a .sav model, and an interactive UI where users enter values and get a labeled result with their name.",
+  technologies: ["Python", "Streamlit", "scikit-learn (SVM, StandardScaler, train_test_split)", "pandas", "NumPy", "pickle"],
+  image: "/diabetes.jpeg",
+  liveUrl: "#",
+  githubUrl: "#"
+}
+
+
+
+
+
+
+
 
 
 ];
