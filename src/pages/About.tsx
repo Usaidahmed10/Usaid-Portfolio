@@ -30,7 +30,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 mb-10">
             {/* Profile Image Left */}
             <div className="flex-shrink-0">
-              <div className="w-56 h-56 rounded-full overflow-hidden shadow-2xl border-4 border-[#3a1550] bg-background flex items-center justify-center">
+              <div className="w-56 h-56 rounded-full overflow-hidden shadow-2xl border-4 dark:border-white border-[#3a1550] bg-background flex items-center justify-center">
                 <Avatar className="w-52 h-52 rounded-full">
                   <AvatarImage src="/profile.png" alt="Usaid" className="object-cover w-full h-full" />
                   <AvatarFallback className="text-5xl bg-primary/10 rounded-full">
@@ -42,7 +42,7 @@ const About = () => {
             {/* Name, Desc, Buttons Right */}
             <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left gap-4 justify-center">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground">
-                <span className="text-[#3a1550]">Usaid Ahmed</span>
+                <span className="dark:text-white text-[#3a1550]">Usaid Ahmed</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl">
               Future-Forward Engineer: Passionate about AI, Data, and Building Scalable Solutions
@@ -76,32 +76,21 @@ const About = () => {
           </div>
 
 
-          {/* My Story */}
-          <Card className="bg-card/50 backdrop-blur-md border-border/30">
-            <CardHeader>
-              <CardTitle>My Story</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">
-                My story isn't one of privilege, but of a relentless, almost visceral ambition ignited in a 
-                middle-class home. While other children explored playgrounds, my childhood was often spent 
-                grinding, pushing limits not just in academics, but in disciplined routines, knowing that every 
-                ounce of effort was an investment in a future I desperately craved. The relentless efforts and the 
-                countless sleepless nights paid off: acceptances poured in from universities across the world, 
-                each offering a fully funded scholarship, a profound validation of years of sacrifice. 
-              </p>
-              <p className="text-muted-foreground">
-                Now at UCL, I channel that same fierce drive into the exhilarating world of data
-                science and software engineering. I'm utterly obsessed with crafting elegant digital solutions that
-                genuinely make a difference, whether it's teaching machines to see, predicting complex patterns, 
-                or just making life a little smoother through clever code. When I'm not wrestling with algorithms or 
-                optimizing datasets until they practically sing, you'll find me channeling that focus on the cricket 
-                pitch or pushing my limits at the gym. It’s where I recharge, strategize, and remember that every 
-                challenge, big or small, can be overcome with a disciplined approach and a healthy dose of determination. 
-                Let's build something truly remarkable together!
-              </p>
-            </CardContent>
-          </Card>
+{/* My Story */}
+<Card className="bg-card/50 backdrop-blur-md border-border/30">
+  <CardHeader>
+    <CardTitle>My Story</CardTitle>
+  </CardHeader>
+  <CardContent className="space-y-4">
+    <p className="text-muted-foreground">
+      I’m all in on AI, the most transformative frontier of our time. What began as curiosity became a disciplined obsession: asking sharper questions, reasoning from first principles, and stress testing ideas with data and evidence. I go deep on how systems learn, model behavior, retrieval, evaluation, and reliability, and I care about building things that actually work. This mindset matured into an Honours BSc with a 4.0 GPA and a track record of turning rigor into results. The recognition that followed, Dean’s lists and research awards, were simply the outcome of a steady loop: question, model, test, learn, repeat.
+    </p>
+    <p className="text-muted-foreground">
+      Today I live at the intersection of ideas and implementation. I lead from the front when needed and from the side when it helps others shine, translating complexity into clear plans, designing systems that last, and shipping with calm execution under pressure. I value thoughtful communication, sound reasoning, and creative problem solving that challenges assumptions and makes things happen. Off the screen, I reset in nature, make music and art, build things for fun, and enjoy the kind of strategy that sharpens focus. I’m a high achiever and an explorer who doesn’t settle, curious, practical, and obsessed with building useful things with great people.
+    </p>
+  </CardContent>
+</Card>
+
 
 {/* Education Section */}
 <Card className="bg-card/50 backdrop-blur-md border-border/30">

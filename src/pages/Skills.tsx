@@ -46,10 +46,10 @@ const skillCategories = [
     icon: <Wrench className="h-6 w-6" />,
     skills: [
       { name: "Git / GitHub", level: 95 },
-      { name: "Cursor", level: 90 },
+      { name: "Amazon Web Services", level: 90 },
       { name: "Streamlit / Gradio", level: 85 },
-      { name: "Docker", level: 75 },
-      { name: "Figma", level: 85 },
+      { name: "Docker", level: 95 },
+      { name: "N8N", level: 85 },
     ]
   }
 ];
@@ -121,11 +121,11 @@ const skillIconMap: Record<string, { icon: JSX.Element; color: string }> = {
   "LangChain": {
     icon: <img src="/langchain.svg" className="h-5 w-5" alt="LangChain" />, color: ""
   },
-  "Cursor": {
-    icon: <img src="/cursor.svg" className="h-5 w-5" alt="Cursor" />, color: ""
+  "Amazon Web Services": {
+    icon: <img src="/aws.jpeg" className="h-5 w-5" alt="aws" />, color: ""
   },
-  "Figma": {
-    icon: <img src="/figma.svg" className="h-5 w-5" alt="Figma" />, color: ""
+  "N8N": {
+    icon: <img src="/n8n.png" className="h-5 w-5" alt="n8n" />, color: ""
   },
   "LangGraph": { icon: <Layers className="h-5 w-5 text-blue-600" />, color: "text-blue-600" },
   "CrewAI": { icon: <Brain className="h-5 w-5 text-fuchsia-500" />, color: "text-fuchsia-500" },
@@ -181,13 +181,13 @@ function getSkillIcon(skillName: string) {
   if (mainSkill.toLowerCase().includes('langchain') || skillName.toLowerCase().includes('langchain')) {
     return <img src="/langchain.svg" className="h-5 w-5" alt="LangChain" />;
   }
-  // Try to find a partial match for Cursor
-  if (mainSkill.toLowerCase().includes('cursor') || skillName.toLowerCase().includes('cursor')) {
-    return <img src="/cursor.svg" className="h-5 w-5" alt="Cursor" />;
+  // Try to find a partial match for aws
+  if (mainSkill.toLowerCase().includes('amazon web services') || skillName.toLowerCase().includes('amazon web services')) {
+    return <img src="/aws.jpeg" className="h-5 w-5" alt="aws" />;
   }
-  // Try to find a partial match for Figma
-  if (mainSkill.toLowerCase() === 'figma' || skillName.toLowerCase().includes('figma')) {
-    return <img src="/figma.svg" className="h-5 w-5" alt="Figma" />;
+  // Try to find a partial match for N8N
+  if (mainSkill.toLowerCase() === 'n8n' || skillName.toLowerCase().includes('n8n')) {
+    return <img src="/n8n.png" className="h-5 w-5" alt="n8n" />;
   }
   // Default icon
   return <Code className="h-5 w-5 text-primary" />;
