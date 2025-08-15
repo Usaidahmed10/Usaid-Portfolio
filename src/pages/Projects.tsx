@@ -82,7 +82,7 @@ const projects = [
   technologies: ["Python", "Streamlit", "scikit-learn (SVM, StandardScaler, train_test_split)", "pandas", "NumPy", "pickle"],
   image: "/diabetes.jpeg",
   liveUrl: "#",
-  githubUrl: "#"
+  githubUrl: "https://github.com/Usaidahmed10/Diabetes-Predictor"
 }
 
 

@@ -141,9 +141,165 @@
 
 ---
 
+
 ## Key Projects
 
-*(Leave this section to fill later with selected projects and links.)*
+Projects --- Detailed Context (First-Person)
+------------------------------------------
+
+### VibeSync: Mood-Driven Social Media App
+
+**Summary:** I built a native Android app that lets people express and track their emotional journey. Each post starts with a mood emoji, then users can add text, images, and optionally a location. VibeQuests gamify engagement, and VibeShift unlocks themed emoji bundles as you progress.\
+**Key features:**
+
+-   Mood posts with text, photo, and public/private visibility
+
+-   Follow, comment, and search to explore friends' timelines
+
+-   Personal and friends' mood maps powered by Google Maps
+
+-   Notifications for follows, approvals, and comments
+
+-   VibeQuests achievements and VibeShift emoji themes\
+    **Tech stack:** Java, Android Studio, Firebase Auth, Firestore, Storage, Google Maps API\
+    **Links:** [GitHub](https://github.com/cmput301-w25/project-vibeverse)
+
+* * * * *
+
+### UAlberta CourseLens
+
+**Summary:** I created a centralized course-selection hub for UofA students. It aggregates professor reviews, course details, and accessibility signals from sources like RateMyProf, Reddit, and BearTracks, then surfaces difficulty and accessibility insights through custom scoring.\
+**Key features:**
+
+-   Aggregation of multi-source course and instructor data
+
+-   Difficulty and accessibility metrics with custom algorithms
+
+-   Serverless data collection and a responsive Next.js UI\
+    **Tech stack:** Next.js, AWS Lambda, PostgreSQL, Python, Tailwind CSS, BeautifulSoup, Requests, Azure\
+    **Links:** [GitHub](https://github.com/Usaidahmed10/CourseLens)
+
+* * * * *
+
+### Tutor Connect
+
+**Summary:** I built a tutoring marketplace that connects Canadian students with vetted overseas agencies. It includes Google login, Stripe payments, chat, scheduling with timezone handling, and automated email triggers.\
+**Key features:**
+
+-   Google OAuth, secure payments with Stripe, real-time chat
+
+-   Calendar scheduling with automatic timezone conversion
+
+-   Transparent pricing, demo sessions, and file storage via Supabase\
+    **Tech stack:** Next.js, Tailwind CSS, Vercel, Supabase, PostgreSQL, Google OAuth, Stripe, Node.js, EmailJS, Live Chat API\
+    **Links:** [Live](https://tutorconnectca.vercel.app/) - GitHub (private/NA)
+
+* * * * *
+
+### aMuse: Neuro-Marketing Application
+
+**Summary:** I engineered a tool that integrates with Muse EEG headsets to quantify audience engagement for ads, speeches, and product demos. A Flutter interface visualizes results for consultants while preserving privacy.\
+**Key features:**
+
+-   EEG ingestion via BrainFlow/Muse APIs and custom signal processing
+
+-   Engagement scoring and reporting dashboards
+
+-   Privacy safeguards including secure APIs and differential privacy concepts\
+    **Tech stack:** Flutter, Dart, Python, C++, CMake, Jupyter, Swift, Figma, Android Studio, BrainFlow API, Muse-S, VS Code\
+    **Links:** [GitHub](https://github.com/Usaidahmed10/neuro-marketing)
+
+* * * * *
+
+### Interactive Twitter CLI
+
+**Summary:** I wrote a CLI for exploring and managing Twitter-like datasets in MongoDB. It supports keyword search, ranking by engagement, user exploration, and composing tweets from the terminal.\
+**Key features:**
+
+-   Search tweets/users, list top tweets and top users
+
+-   Compose and insert tweets with metadata
+
+-   Efficient batch loading and MongoDB-backed queries\
+    **Tech stack:** Python, MongoDB, PyMongo\
+    **Links:** [GitHub](https://github.com/Usaidahmed10/MongoDB-Tweet-Manager)
+
+* * * * *
+
+### 3D Ray Tracer
+
+**Summary:** I implemented a multi-file C ray tracer that renders shaded spheres with hard shadows and anti-aliasing to PPM images. It includes custom math utilities and a Makefile with multiple build targets.\
+**Key features:**
+
+-   Ray--sphere intersection, shading, hard shadows
+
+-   3×3 grid anti-aliasing and HEX→RGB utilities
+
+-   Robust CLI parsing and automated check scripts\
+    **Tech stack:** C, Makefile, GCC, PPM, math.h, qsort, Shell, Python\
+    **Links:** [GitHub](https://github.com/cmput201-f24/assignment-template-Usaidahmed10)
+
+* * * * *
+
+### Alberta-Legal-Assistant-Chatbot
+
+**Summary:** I built a two-stage RAG system for Alberta's Acts & Regulations. A serverless pipeline ingests, cleans, and chunks 1,400+ PDFs, writes embeddings to OpenSearch Serverless, and serves grounded, citation-rich answers via Bedrock.\
+**Key features:**
+
+-   Serverless ingestion (S3 + EventBridge) with delta sync (add/change/remove)
+
+-   Embeddings (MiniLM via ONNX) → OpenSearch hybrid k-NN + BM25 retrieval
+
+-   Bedrock-orchestrated prompts with citations and metadata filters
+
+-   Dockerized jobs, CloudWatch tracing, and YAKE keyword extraction\
+    **Tech stack:** AWS Bedrock, OpenSearch Serverless, AWS Lambda, API Gateway, S3, EventBridge, CloudWatch, IAM, Docker, Python, FastAPI, Sentence-Transformers (MiniLM), ONNX Runtime, YAKE, k-NN, BM25\
+    **Links:** [GitHub](https://github.com/Usaidahmed10/Alberta-Legal-Assistant-Chatbot)
+
+* * * * *
+
+### Movies Recommendation System
+
+**Summary:** I shipped a content-based recommender in Streamlit. It vectorizes movie metadata with TF-IDF, computes cosine similarity, and returns top-N similar titles in a fast, interactive UI.\
+**Key features:**
+
+-   TF-IDF over text features with sparse-matrix caching
+
+-   Cosine similarity ranking and simple evaluation views
+
+-   CSV ingest and end-to-end reproducible pipeline\
+    **Tech stack:** Python, Streamlit, scikit-learn (TfidfVectorizer), pandas, NumPy, Cosine Similarity, Kaggle dataset\
+    **Links:** [GitHub](https://github.com/Usaidahmed10/Movies-Recommendation-System)
+
+* * * * *
+
+### Sonar Data Classification
+
+**Summary:** I trained a Logistic Regression model to classify sonar signals as Rock or Mine. The project includes a clean ML pipeline and a quick prediction routine for new inputs.\
+**Key features:**
+
+-   Preprocessing with StandardScaler and train/test split
+
+-   ~85% test accuracy on the canonical dataset
+
+-   Simple CLI/utility for new 60-value predictions\
+    **Tech stack:** Python, scikit-learn (LogisticRegression, StandardScaler, train_test_split), pandas, NumPy\
+    **Links:** GitHub (coming soon)
+
+* * * * *
+
+### Diabetes Prediction System
+
+**Summary:** I built a Streamlit app powered by an SVM (linear kernel) that predicts diabetes from PIMA metrics. A saved model enables quick, interactive inference.\
+**Key features:**
+
+-   Reusable training script persists a `.sav` model
+
+-   Interactive form + labeled results with user name
+
+-   Clean, explainable feature inputs\
+    **Tech stack:** Python, Streamlit, scikit-learn (SVM, StandardScaler, train_test_split), pandas, NumPy, pickle\
+    **Links:** GitHub (coming soon)
 
 ---
 
