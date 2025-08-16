@@ -122,7 +122,7 @@ const experiences = [
   },
   {
     company: "EduFord",
-    position: "Web Development Intern",
+    position: "Web Development",
     duration: "May 2023",
     location: "Remote",
     type: "Internship",
